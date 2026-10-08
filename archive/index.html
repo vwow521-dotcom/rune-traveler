@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#090e18">
+  <title>星际游隼 · STARFALL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="星际游隼主页"><span class="brand-mark">✦</span> ORBIT<span class="brand-label">ARCADE / 001</span></a>
+      <span class="status"><i></i> 全系统在线</span>
+    </header>
+    <section class="heading"><div><div class="eyebrow">ONE SHIP. ENDLESS SPACE.</div><h1>星际游隼<span>STARFALL</span></h1><p>穿过陨石雨，收集星能。让这段航程，再远一点。</p></div><div class="record"><span>个人最佳 / BEST</span><strong id="best">0000</strong></div></section>
+    <section class="game-frame" aria-label="星际游隼游戏区">
+      <canvas id="game" aria-label="驾驶飞船躲避陨石并收集星能"></canvas>
+      <div class="hud"><div><span>SCORE / 得分</span><strong id="score">0000</strong></div><div class="hud-right"><div><span>HULL / 护盾</span><strong id="lives" class="lives">◆ ◆ ◆</strong></div><button id="pause" title="暂停游戏（P）" aria-label="暂停游戏" disabled>Ⅱ</button></div></div>
+      <div class="level"><span id="level">SECTOR 01</span><span id="timer">00:00</span></div>
+      <div id="overlay" class="overlay"><div class="intro-icon">✧</div><div class="eyebrow" id="overlay-label">READY FOR TAKEOFF</div><h2 id="overlay-title">宇宙很大，<br>这次由你领航。</h2><p id="overlay-text">躲开陨石，拾取金色星能<br>三格护盾，一场没有终点的冒险。</p><button id="start" class="primary">开启航程 <span>↗</span></button><span class="start-hint" id="start-hint">或按 空格键 出发</span></div>
+      <div id="toast" class="toast" aria-live="polite"></div>
+    </section>
+    <section class="bottom"><div class="controls"><span class="control-label">飞行指南</span><span><kbd>←</kbd><kbd>→</kbd> / <kbd>A</kbd><kbd>D</kbd> 移动</span><span><kbd>P</kbd> 暂停</span><span class="touch-tip">触屏拖动飞船</span></div><span class="sound-note">保持专注，享受失重。</span></section>
+    <footer><span>BUILT FOR A LITTLE ESCAPE</span><span>✦ <span class="footer-chinese">下一颗星，等你抵达。</span></span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
